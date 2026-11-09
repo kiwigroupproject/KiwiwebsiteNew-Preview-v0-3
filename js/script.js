@@ -3,9 +3,9 @@
    Edit CONFIG below with real contact details and the enquiry endpoint.
    ========================================================================== */
 var CONFIG = {
-  whatsapp: '910000000000',            // country code + number, digits only
+  whatsapp: '917798848995',            // country code + number, digits only
   whatsappMessage: 'Hello KiWi Technologies, I would like to discuss a project.',
-  email: 'hello@yourdomain.com',
+  email: 'kiwigroupconnect@gmail.com',
   formEndpoint: ''                     // e.g. a Formspree / Web3Forms URL. Empty = demo mode (nothing sent)
 };
 (function(){

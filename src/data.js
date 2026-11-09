@@ -35,22 +35,6 @@ const services = [
     faqs: [['How long does a website take?', 'A business website usually takes 3 to 5 weeks. Stores and platforms take longer depending on scope.'], ['Will a redesign hurt our Google ranking?', 'Not when it is planned. We map every existing URL, set up redirects and monitor Search Console through the migration.'], ['Can we edit the content ourselves?', 'Yes. We set up a simple editor so your team can update text, images, projects and posts.']]
   },
   {
-    slug: 'mobile-apps', no: 'iii.', name: 'Mobile Apps', short: 'Android and iOS applications from a single codebase.',
-    icon: '<rect x="18" y="6" width="28" height="52" rx="6"/><path d="M28 12h8M30 50h4"/>',
-    lead: 'From field-team tools to customer apps, we build mobile products that feel native, work offline where it matters and are ready for both app stores.',
-    builds: [
-      ['Customer-facing apps', 'Booking, ordering, loyalty and service apps with push notifications.'],
-      ['Field and workforce apps', 'Attendance, tasks, geo-tagging and photo capture, with offline sync.'],
-      ['Companion apps', 'Mobile access to your existing web platform or back office.'],
-      ['Payments and wallets', 'UPI, cards and subscription billing with secure checkout.'],
-      ['Maps and location', 'Live tracking, geofencing and route features.'],
-      ['Store publishing', 'Developer accounts, listings, screenshots and review handling.']
-    ],
-    tech: ['Flutter', 'React Native', 'Firebase', 'REST APIs', 'Push (FCM)', 'Play Store / App Store'],
-    deliver: ['App flow and wireframes', 'Interactive prototype', 'Android and iOS builds', 'Device testing', 'Store submission support', 'Post-launch fixes for 30 days'],
-    faqs: [['Do I need separate Android and iOS apps?', 'Usually not. One Flutter or React Native codebase covers both and lowers cost and maintenance.'], ['Can the app work offline?', 'Yes. We design offline-first flows for field use and sync safely when the connection returns.'], ['Do you publish to the stores for us?', 'Yes. We prepare listings and submit builds, and handle review feedback.']]
-  },
-  {
     slug: 'brand-identity', no: 'iv.', name: 'Logo & Brand Identity', short: 'Logo design, visual identity and a complete brand guideline.',
     icon: '<path d="M32 6c14 0 24 9 24 20 0 8-6 10-12 10h-6c-4 0-4 6 0 8 4 3 2 12-6 12C16 56 6 46 6 32S16 6 32 6z"/><circle cx="20" cy="28" r="3"/><circle cx="30" cy="18" r="3"/><circle cx="42" cy="22" r="3"/>',
     lead: 'A brand is more than a logo. We build identities from strategy outward, using brand psychology, typography and colour theory, so every touchpoint feels like the same confident company.',
@@ -97,22 +81,6 @@ const services = [
     tech: ['Illustrator', 'Photoshop', 'InDesign', 'After Effects', 'Canva templates', 'Print production'],
     deliver: ['Brief and moodboard', 'Concepts and revisions', 'Print-ready or web-ready files', 'Editable templates', 'Press proofing support', 'Monthly retainer option'],
     faqs: [['Can you manage printing?', 'Yes. We prepare print-ready files and can coordinate with printers and check proofs.'], ['Do you offer monthly design support?', 'Yes. Retainers give you a set number of creatives each month at a fixed fee.'], ['Can you match our existing brand?', 'Yes. We work from your guideline, or create one first if none exists.']]
-  },
-  {
-    slug: 'cloud-support', no: 'vii.', name: 'Cloud, Support & Maintenance', short: 'Hosting, monitoring, backups and retainers after launch.',
-    icon: '<path d="M20 44a12 12 0 1 1 3-23 14 14 0 0 1 27 4 10 10 0 0 1-2 19z"/><path d="M26 36l6-6 6 6M32 30v18"/>',
-    lead: 'Launch is the start, not the finish. We keep your website or application secure, fast and current with hosting, monitoring, backups and a team that answers when you need it.',
-    builds: [
-      ['Cloud hosting and setup', 'Scalable, secure infrastructure sized to your traffic.'],
-      ['Monitoring and uptime', 'Alerts and dashboards so issues are fixed before users notice.'],
-      ['Backups and recovery', 'Scheduled backups and tested restore procedures.'],
-      ['Security updates', 'Patching, SSL, firewall rules and vulnerability checks.'],
-      ['Ongoing enhancements', 'A monthly allowance of hours for improvements and new features.'],
-      ['Performance tuning', 'Speed, database and caching optimisation as you grow.']
-    ],
-    tech: ['AWS', 'Docker', 'CI / CD', 'Cloudflare', 'Uptime monitoring', 'Automated backups'],
-    deliver: ['Hosting and domain setup', 'Monitoring and alerting', 'Daily backups', 'Security patching', 'Monthly report', 'Priority support channel'],
-    faqs: [['What does a maintenance plan include?', 'Hosting, backups, security updates, monitoring and a set number of hours for changes each month.'], ['How fast do you respond to issues?', 'Critical issues get priority response; response times are set out in your support agreement.'], ['Can you support software you did not build?', 'Often yes, after a short audit of the code and hosting.']]
   }
 ];
 
@@ -124,7 +92,7 @@ const cases = [
     results: [['-62%', 'Reporting time'], ['14', 'Offices live'], ['4 mo.', 'Delivery']],
     challenge: 'Each regional office tracked shipments, delays and costs in its own spreadsheet. Head office waited days for consolidated numbers, and errors crept in at every hand-off.',
     solution: ['We mapped the reporting process across all 14 offices and designed one shared data model.', 'A role-based web platform now collects shipment data, flags delays automatically and gives management a live performance dashboard.', 'Integrations with the existing accounting system removed double entry.'],
-    stack: ['React', 'Node.js', 'PostgreSQL', 'AWS'], timeline: '4 months', services: ['custom-software', 'ui-ux-design', 'cloud-support'],
+    stack: ['React', 'Node.js', 'PostgreSQL', 'AWS'], timeline: '4 months', services: ['custom-software', 'ui-ux-design'],
     quote: 'Numbers that took a week now take minutes, and every office trusts the same figures.'
   },
   {
@@ -144,7 +112,7 @@ const cases = [
     results: [['1,200', 'Active users'], ['99.9%', 'Uptime'], ['1', 'Codebase, 2 platforms']],
     challenge: 'Attendance for 1,200 staff across many client sites was collected on paper and chased by phone. Payroll disputes were frequent and supervisors had no live view of who was on site.',
     solution: ['A mobile app records geo-verified, photo-backed check-ins that work offline and sync automatically.', 'Supervisors assign tasks and see site coverage in real time from a companion web dashboard.', 'Payroll exports remove manual consolidation at month end.'],
-    stack: ['Flutter', 'Firebase', 'Node.js', 'Google Maps'], timeline: '5 months', services: ['mobile-apps', 'custom-software'],
+    stack: ['Flutter', 'Firebase', 'Node.js', 'Google Maps'], timeline: '5 months', services: ['custom-software'],
     quote: 'Payroll disputes dropped sharply because everyone can see the same record.'
   },
   {
@@ -279,9 +247,9 @@ cases.push({
   stack: ['InDesign', 'PowerPoint', 'Illustrator', 'Print production'], timeline: '3 weeks', services: ['company-profiles', 'brand-identity', 'marketing-collateral'],
   quote: 'Our profile now opens doors instead of needing an explanation.'
 });
-const order = ['brand-identity', 'web-development', 'company-profiles', 'ui-ux-design', 'marketing-collateral', 'custom-software', 'mobile-apps', 'cloud-support'];
+const order = ['brand-identity', 'web-development', 'company-profiles', 'ui-ux-design', 'marketing-collateral', 'custom-software'];
 services.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
-const roman = ['i.', 'ii.', 'iii.', 'iv.', 'v.', 'vi.', 'vii.', 'viii.'];
+const roman = ['i.', 'ii.', 'iii.', 'iv.', 'v.', 'vi.'];
 services.forEach((s, i) => { s.no = roman[i]; });
 const corder = ['food-beverage-rebrand', 'retail-storefront', 'company-profile-deck', 'logistics-platform', 'field-workforce-app'];
 cases.sort((a, b) => corder.indexOf(a.slug) - corder.indexOf(b.slug));
