@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kiwigroup.co.in/sitemap.xml
