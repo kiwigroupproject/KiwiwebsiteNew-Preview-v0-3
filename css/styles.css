@@ -286,7 +286,7 @@ details p{margin-top:14px;max-width:64ch}
 .ct{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,110px)}
 .ct .l p{margin-top:22px;font-size:18px;max-width:42ch}
 .ci{margin-top:40px;display:grid}
-.ci div{display:flex;gap:20px;padding:18px 0;border-top:1px solid var(--fline);color:var(--on);font-size:16px}
+.ci div{display:flex;gap:20px;padding:18px 0;border-top:1px solid var(--fline);color:var(--on);font-size:16px;overflow-wrap:anywhere}
 .ci span{flex:none;width:90px;font:600 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);padding-top:4px}
 .fm{display:grid;gap:18px;background:rgba(255,255,255,.04);border:1px solid var(--fline);border-radius:14px;padding:clamp(24px,4vw,44px);backdrop-filter:blur(6px)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -303,7 +303,7 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold)}
 .cico{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:rgba(210,173,92,.12);color:var(--gold-deep);margin-bottom:10px}
 .cico svg{width:22px;height:22px}
 .channel small{font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.channel b{font:600 17px var(--serif);color:var(--ink)}
+.channel b{font:600 17px var(--serif);color:var(--ink);overflow-wrap:anywhere}
 .channel .go{font:600 12px var(--sans);letter-spacing:.06em;color:var(--kiwi-deep);margin-top:6px}
 .map-wrap{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;margin-top:28px;align-items:stretch}
 .mapbox{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:320px}
@@ -321,10 +321,13 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold)}
 footer{background:var(--f950);color:var(--on-soft);padding-block:80px 28px;position:relative;overflow:hidden}
 footer .big{font:italic 400 clamp(40px,8vw,120px)/1 var(--serif);background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:64px;opacity:.9}
 .fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.fg>div{min-width:0}
 footer h4{font:600 11px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-footer a{display:block;padding:5px 0;font-size:15px}footer a:hover{color:var(--gold-hi)}
+footer a{display:block;padding:5px 0;font-size:15px;overflow-wrap:anywhere}
+footer a:hover{color:var(--gold-hi)}
 .fb{margin-top:60px;padding-top:22px;border-top:1px solid var(--fline);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(max-width:860px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.fg{grid-template-columns:1fr}}
 .fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:80;display:grid;gap:12px}
 .fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .25s}
 .fab a:hover{transform:scale(1.08)}
@@ -404,7 +407,7 @@ nav .dd ul a:hover{background:rgba(140,198,63,.14);color:var(--gold-hi)}
 .aside{position:sticky;top:110px}
 .ac{background:var(--f900);color:var(--on-soft);border-radius:14px;padding:34px 30px;border:1px solid rgba(210,173,92,.3);box-shadow:0 30px 60px rgba(6,26,19,.25)}
 .ac .eb{color:var(--gold)}.ac h3{color:var(--on);font-size:28px;margin-bottom:12px}.ac p{font-size:15px;margin-bottom:24px}
-.mini{margin-top:18px;padding-top:16px;border-top:1px solid var(--fline);color:var(--on);font-size:15px}
+.mini{margin-top:18px;padding-top:16px;border-top:1px solid var(--fline);color:var(--on);font-size:15px;overflow-wrap:anywhere}
 .mini span{display:block;font:600 10.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
 .olist{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
 .olist a{display:flex;align-items:center;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);font:600 22px var(--serif);color:var(--ink);transition:padding .3s,color .3s}
