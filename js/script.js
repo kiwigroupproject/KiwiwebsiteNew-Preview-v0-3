@@ -10,12 +10,6 @@ var CONFIG = {
 };
 (function(){
   var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-  /* kiwi slice */
-  var rays=document.getElementById('rays'),seeds=document.getElementById('seeds'),i,a,x1,y1,x2,y2;
-  if(rays&&seeds){
-  for(i=0;i<48;i++){a=i/48*6.2832;rays.insertAdjacentHTML('beforeend','<line x1="'+(Math.cos(a)*24).toFixed(1)+'" y1="'+(Math.sin(a)*24).toFixed(1)+'" x2="'+(Math.cos(a)*84).toFixed(1)+'" y2="'+(Math.sin(a)*84).toFixed(1)+'"/>')}
-  for(i=0;i<34;i++){a=i/34*6.2832;var r=36+(i%2)*3.5;seeds.insertAdjacentHTML('beforeend','<ellipse cx="'+(Math.cos(a)*r).toFixed(1)+'" cy="'+(Math.sin(a)*r).toFixed(1)+'" rx="1.5" ry="3" transform="rotate('+(a*57.3+90).toFixed(0)+' '+(Math.cos(a)*r).toFixed(1)+' '+(Math.sin(a)*r).toFixed(1)+')"/>')}
-  }
 
   /* header, progress, drawer */
   var hd=document.getElementById('hd'),pg=document.getElementById('prog');
